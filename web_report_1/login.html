@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <h1>Login</h1>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"
+         placeholder="Username" pattern="^[a-zA-Z0-9._]{3,20}$" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Password" 
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!#%*?&])[A-Za-z\d@$!%#*?&]{12,}$" required>
+        
+        <button type="submit">Login</button>
+        <input type="reset" value="Clear">
+        
+        <p>Username must be:</p>
+        <ul>
+            <li>3-20 characters long</li>
+            <li>Can contain letters, numbers, dots and underscores</li>
+        </ul>
+        
+        <p>Password must be:</p>
+        <ul>
+            <li>12 characters long</li>
+            <li>Must contain at least one uppercase letter</li>
+            <li>Must contain at least one lowercase letter</li>
+            <li>Must contain at least one special character (!@#$%&*?)</li>
+            <li>Must contain at least one digit</li>
+        </ul>
+    </form>
+</body>
+</html>

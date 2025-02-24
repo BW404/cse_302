@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.center{
+    text-align: center;
+}
+.green{
+    color: green;
+}
+.black{
+    color: black;
+}
+.red{
+    color: red;
+}
+.gray_background{
+    background-color: rgba(213, 213, 213, 0.802);
+}
+.yollow_background{
+    background-color: #FFE31A;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+th{
+    font-weight: bolder;
+    background-color: #d3eca5;
+}
+th,td{
+    width: 200px;
+    height: 40px;
+    border: 2px solid black;
+}
+.small_width{
+    width: 100px;
+}
