@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 10px 200px;
+    border-bottom: 2px solid black; 
+}
+
+.nav-items {
+    display: flex;
+    gap: 10px; 
+}
+
+.nav-items a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+
+.faculty{
+background-color: rgb(255, 255, 255);
+text-align: center;
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
+
+}
+
+.member{
+background-color: lightgreen;
+padding: 10px;
+margin: 20px;
+border-radius: 20px;
+transition: transform 0.3s ease-in-out;
+text-align: left;
+width: 250px;
+font-size: 15px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.faculty-list{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.faculty-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(238, 232, 144);
+    overflow: hidden;
+    transition: transform 1s ease-in-out;
+}
+
+button{
+    margin: 10px;
+    margin-left: 0px;
+    background-color: lightskyblue;
+    color: blue;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.member:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+.member:hover .faculty-image{
+    transform: scale(1.05);   
+}
+
+button:hover{
+    background-color: blue;
+    color: white;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
